@@ -7,7 +7,7 @@ namespace MockAssessment2a
     {
         static void Main(string[] args)
         {
-            string[] characters = new string[4] { "Han", "Chewy", "Yoda", "Luke" };            
+            string[] characters = new string[4] { "Han Solo", "Chewbacca", "Yoda", "Luke Skywalker" };            
             Console.WriteLine(Challenge.AddStarWarsCharacters(characters));
 
             Console.WriteLine();
@@ -20,9 +20,12 @@ namespace MockAssessment2a
             jedis.Add("person5", 5);
             Console.WriteLine(Challenge.DeathStarCombat(jedis));
 
+            //I absolutely googled planet names because there's no way i can remember more than like two
+            //I didn't look up jedis though because I would just go down a rabbit hole trying to figure out who is more powerful
+
             Console.WriteLine();
 
-            string[] planets = new string[6] { "planet1", "planet2", "planet3", "planet4", "planet5", "planet6" };
+            string[] planets = new string[6] { "Tatooine", "Mustafar", "Hoth", "Naboo", "Dathomir", "Coruscant" };
             var convertedPlanets = Challenge.ConvertPlanets(planets);
             foreach (var planet in convertedPlanets)
             {
@@ -34,7 +37,11 @@ namespace MockAssessment2a
             List<int> droids = new List<int> { 365, 268, 449, 260, 100, 233, 642, 767 };           
             Console.WriteLine(Challenge.AverageDroids(droids));
 
+            //I had thought droids had model numbers with combinations of letters and numbers only so i just made up test numbers
+
             Console.WriteLine();
+
+            //I know this won't be graded on star wars accuracy but i tried where i could
 
             string vader1 = "5";
             string vader2 = "nope";
